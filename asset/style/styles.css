@@ -55,7 +55,7 @@ header #row-right{
 
 main .search-form input{
     border-radius: 50px;
-    border: 1px solid #BF048D;
+    border: 1px solid #BF048D !important;
 }
 
 main .btn{
@@ -79,3 +79,10 @@ main .card-txt h5, p{
 main .search-container{
     padding-left: 20rem;
 }
+form label{
+    font-weight: bolder;
+    color: #BF048D;
+}
+form .form-control{
+    border: 1px solid #BF048D;
+} 
