@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 
-.bg,footer{
+.bg,footer,table{
     background-color: #F2E3D5;
 
 }
@@ -78,6 +78,22 @@ main .card-txt h5, p{
 }
 main .search-container{
     padding-left: 20rem;
+}
+main table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #BF048D;
+}
+main th{
+    border: 3px solid #BF048D;
+    font-size: 2rem;
+    color: #F2E3D5;
+    background-color: #BF048D;
+}
+main td{
+    border: 1px solid #BF048D;
+    text-align: center;
 }
 form label{
     font-weight: bolder;
