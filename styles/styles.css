@@ -52,30 +52,29 @@ header #row-right{
     top: 100px; right: 100px;
     color: #BF048D;
 }
-
+main .main-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
 main .search-form input{
     border-radius: 50px;
     border: 1px solid #BF048D !important;
 }
 
-main .btn{
+main .btn, .btn-event{
     border: none !important;
     background-color: #BF048D !important;
     border-radius: 50px !important;
-    box-shadow: 1px 2px black;
+    box-shadow: 1px 2px rgb(43, 40, 40);
 }
 
-main .btn:hover{
+main .btn:hover, .btn-event:hover{
     background-color: #F2E3D5 !important;
     color: black !important;
     font-weight: bolder !important;
 }
 
-main .card-txt h5, p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 main .search-container{
     padding-left: 20rem;
 }
@@ -102,3 +101,42 @@ form label{
 form .form-control{
     border: 1px solid #BF048D;
 } 
+
+/*CARDS*/
+
+.card{
+    margin: 20px;
+}
+.card-img-top{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.card-title{
+    color: #F2E3D5!important;
+    background-color: #BF048D;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-info{
+    font-weight: bolder!important;
+}
+.text-muted{
+    font-weight: bolder !important;
+}
+.card-footer{
+    text-align: center;
+    font-size: 20px;
+}
+.card-btn{
+    position: absolute;
+    bottom: 5rem; left: 280px;
+}
+.btn-event{
+    padding: .5rem;
+    text-decoration: none;
+    color: #F2E3D5;
+    font-weight: bold;
+}

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/asset/favicon.ico" type="image/x-icon" />
     <title>Amazing Events</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,7 +23,7 @@
         <div class="container-fluid">
           <a class="navbar-brand fs-3 ms-3" href="index.html">
             <img
-              src="asset/img/Logo_AmazEvents.png"
+              src="/asset/img/Logo_AmazEvents.png"
               alt="Amazing Events"
               width="100"
               height="24"
@@ -56,52 +56,161 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link mx-3" aria-current="page" href="index.html"
+                <a class="nav-link mx-3" aria-current="page" href="/index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3" href="upcoming.html"
+                <a class="nav-link mx-3" href="./upcoming.html"
                   >Upcoming Events</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3" href="pastEvents.html">Past Events</a>
+                <a class="nav-link mx-3" href="./pastEvents.html">Past Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3" href="contact.html">Contact</a>
+                <a class="nav-link mx-3" href="./contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3" href="stats.html">Stats</a>
+                <a class="nav-link active mx-3" href="#">Stats</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <!--Banner-->
+      <div class="banner">
+        <p id="row-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="3rem"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+            />
+          </svg>
+        </p>
+        <h1>Stats</h1>
+        <p id="row-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="3rem"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+            />
+          </svg>
+        </p>
+      </div>
     </header>
     <main>
-      <div class="container-details p-5">
-        <div class="card mb-3 p-5" style="width: 80rem; height: 24rem">
-          <div class="row g-0">
-            <div class="img-card col-md-4 d-flex">
-              <img
-                src="asset/img/Marathon.jpg"
-                class="img-fluid shadow-lg"
-                alt="Maraton"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title text-center">Titulo</h5>
-                <p class="card-text">Texto Descriptivo</p>
-                <p class="card-text">Texto Descriptivo</p>
-                <p class="card-text">Texto Descriptivo</p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-          </div>
+      <div class="container my-3">
+        <div class="container-table d-flex justify-content-center">
+          <table>
+            <fieldset>
+              <thead>
+                <tr>
+                  <th class="text-center" colspan="3">Events statistics</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Events with the highest percentage of attendance</td>
+                  <td>Events with the lowest percentage of attendance</td>
+                  <td>Event with larger capacity</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+              </tbody>
+            </fieldset>
+            <fieldset>
+              <thead>
+                <tr>
+                  <th class="text-center" colspan="3">
+                    Upcoming events statistics by category
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Categories</td>
+                  <td>Revenues</td>
+                  <td>Percentage of attendance</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+              </tbody>
+            </fieldset>
+            <fieldset>
+              <thead>
+                <tr>
+                  <th class="text-center" colspan="3">
+                    Past events statistics by category
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Categories</td>
+                  <td>Revenues</td>
+                  <td>Percentage of attendance</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                  <td>&nbsp</td>
+                </tr>
+              </tbody>
+            </fieldset>
+          </table>
         </div>
       </div>
     </main>
@@ -158,9 +267,9 @@
           </li>
         </ul>
       </div>
-      <div class="logo-amazevent">
+      <div class="logo-amazevent d-flex px-4">
         <img
-          src="asset/img/Logo_AmazEvents.png"
+          src="/asset/img/Logo_AmazEvents.png"
           alt="Amazing Events"
           width="100"
           height="24"
