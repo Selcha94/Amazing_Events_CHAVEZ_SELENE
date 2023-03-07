@@ -2,6 +2,7 @@ const eventDiv = document.getElementById("events");
 const events = data.events;
 const currentDate = new Date(data.currentDate);
 
+function updateCardEvents(){
 for (let i = 0; i < events.length; i++) {
   const event = events[i];
   const eventDate = new Date(event.date);
@@ -34,3 +35,6 @@ for (let i = 0; i < events.length; i++) {
     eventDiv.appendChild(eventsDiv);
   }
 }
+}
+
+updateCardEvents(events);

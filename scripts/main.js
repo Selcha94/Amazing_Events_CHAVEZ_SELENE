@@ -1,6 +1,7 @@
 const eventDiv = document.getElementById("events");
 const events = data.events;
 
+function cardEvents(){
 for (let i = 0; i < events.length; i++) {
   const event = events[i];
   const eventsDiv = document.createElement("div");
@@ -30,3 +31,5 @@ for (let i = 0; i < events.length; i++) {
     `;
   eventDiv.appendChild(eventsDiv);
 }
+}
+cardEvents(events);
