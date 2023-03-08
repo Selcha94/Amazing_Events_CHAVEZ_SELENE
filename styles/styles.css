@@ -19,6 +19,10 @@ nav #navbarNav a {
     font-size: 1rem;
 }
 
+nav .navbar-toggler {
+    color: #BF048D!important;
+}
+
 nav .active {
     background-color: #BF048D;
     color: rgba(255, 255, 255, 0.959) !important;
@@ -166,9 +170,6 @@ form .form-control {
 }
 
 
-    .navbar-toggler {
-    color: #BF048D!important;
-}
 
 /*Media Queries*/
 
