@@ -15,12 +15,8 @@ for (let i = 0; i < events.length; i++) {
       <img src="${event.image}" class="card-img-top rounded-top" alt="${event.name}">
       <div class="card-body">
         <h5 class="card-title rounded">${event.name}</h5>
-        <p class="card-info text-center">${event.category}</p>
         <p class="card-text">${event.description}</p>
-        <p class="card-info">Place: ${event.place}</p>
-        <p class="card-info">Date: ${event.date}</p>
-        <p class="card-info">Capacity: ${event.capacity}</p>
-        <p class="card-info">Estimate: ${event.estimate}</p>
+        <p class="card-text-date">${event.date}</p>
       </div>
       <div class="card-btn">
       <a href="details.html" class="btn-event">Ver Evento</a>
