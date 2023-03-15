@@ -11,7 +11,6 @@ function mostrarEventos(lista) {
   let cardHtml = "";
   lista.forEach((element) => {
     cardHtml += `
-    <div class="col">
         <div class="card-deck">
         <div class="card shadow p-1 mb-5 bg-white rounded d-flex justify-content-center">
         <img src="${element.image}" class="card-img-top rounded-top" alt="${element.name}">
@@ -24,7 +23,6 @@ function mostrarEventos(lista) {
         <small class="text-muted">$${element.price}</small>
         <a href="../pages/details.html?id=${element._id}" class="btn-event">Ver Evento</a>
       </div>
-    </div>
     </div>
   </div>`;
   });

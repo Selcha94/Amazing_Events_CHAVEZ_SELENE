@@ -20,7 +20,7 @@ nav #navbarNav a {
 }
 
 nav .navbar-toggler {
-    color: #BF048D!important;
+    color: #BF048D !important;
 }
 
 nav .active {
@@ -52,12 +52,13 @@ header .banner h1 {
     color: #BF048D !important;
     font-weight: bolder;
 }
+
 header .banner {
     display: block;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 
 /*Main*/
 
@@ -66,7 +67,7 @@ main .main-container {
     margin: 0 auto;
 }
 
-main #search{
+main #search {
     border-radius: 100px;
     border: 1px solid #BF048D;
 }
@@ -127,9 +128,10 @@ form .form-control {
 }
 
 /*Footer*/
-footer{
+footer {
     min-height: 5vh !important;
 }
+
 .card-title {
     color: #F2E3D5 !important;
     background-color: #BF048D;
@@ -138,30 +140,36 @@ footer{
     text-align: center;
     border-radius: 50px;
 }
+
 .details {
     margin-top: 2rem;
 }
 
-.conCard{
+.detail-card{
+    background-color: #F2E3D5;
+    border-radius: 10px;
+}
+
+.conCard {
     min-height: 90vh;
 }
 
-#cardimg{
+#cardimg {
     object-fit: cover;
     min-height: 70vh;
     box-shadow: 1px 1px 20px #BF048D;
 }
 
-.card-body h4{
+.card-body h4 {
     color: #BF048D;
     font-weight: bolder;
 }
 
 .text-muted {
-    font-weight: bolder!important;
+    font-weight: bolder !important;
 }
 
-.text-muted{
+.text-muted {
     font-size: 20px;
 }
 
@@ -183,136 +191,31 @@ footer{
     text-align: right;
 }
 
-.card-container h2{
-padding-bottom: 25vh;
-font-weight: bolder;
-color: #BF048D;
+.card-container h2 {
+    padding-bottom: 25vh;
+    font-weight: bolder;
+    color: #BF048D;
 }
-/*Queda corregir Media Queries para la proxima*/
 
-/* Media Queries
+
+/*Media Queries*/
 
 @media only screen and (max-width: 1000px) {
 
-    nav #navbarNav a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    header #row-left {
-        top: 100px;
-        left: 100px;
-    }
-
-    header #row-right {
-        top: 100px;
-        right: 100px;
-    }
-    .card-btn {
-        position: relative;
-        top: 5px;
-        left: 60px;
-        font-size: 12px;
-    }
-
-    main .main-container {
-        display: grid;
-    }
-
-    .main-container {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
-    .container-checkbox {
-        flex-wrap: wrap;
-       justify-content: end;
-    }
-
-    .form-check-inline {
-        width: 15%;
-        padding: 10px 0;
-    }
-
-    .search-container {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .search-form {
-        flex-wrap: nowrap;
-    }
-
-    .form-control {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .btn {
-        width: 10%;
-        margin-bottom: 10px;
-    }
-
-    main .search-container {
-        padding-right: 10rem;
-    }
-
-    .card-title {
-        font-size: 12px;
-    }
-    .card-text{
-        font-size: 12px;
-    }
-
+.nav-item a{
+    text-align: center;
 }
-@media only screen and (max-width: 763px){
-    main .main-container {
-        display: grid;
-    }
-
-    .main-container {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
-    .container-checkbox {
-        flex-wrap: wrap;
-       justify-content: center;
-    }
-
-    .form-check-inline {
-        width: 15%;
-        padding: 10px 0;
-    }
-
-    .search-container {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .form-control {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .btn {
-        width: 25%;
-    }
-
-    main .search-container {
-        padding-right: 5rem;
-    }
-
+.banner h1{
+    font-size: 30px!important;
 }
-@media only screen and (max-width: 1200px){
-    .card-btn {
-        position: relative;
-        top: 5px;
-        left: 100px;
-        font-size: 12px;
-    }
-
-} */
+.card-title{
+    font-size: 15px!important;
+}
+.btn-event{
+    padding: 2px!important;
+    font-size: 10px;
+}
+.card-text, .card-text-date, .text-muted{
+    font-size: 10px;
+}
+}
