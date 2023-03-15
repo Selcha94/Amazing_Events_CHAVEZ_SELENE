@@ -45,12 +45,12 @@ nav .navbar-toggler:focus {
 
 header .banner h1 {
     text-align: center;
-    font: small-caps bold 24px/1 sans-serif;
-    font-size: 2rem;
-    text-shadow: 2px 3px 3px #BF048D;
+    font-size: 5rem;
+    text-shadow: 3px 6px 8px #BF048D;
     padding: 2rem;
     background-color: #F2E3D5;
     color: #BF048D !important;
+    font-weight: bolder;
 }
 header .banner {
     display: block;
@@ -66,9 +66,9 @@ main .main-container {
     margin: 0 auto;
 }
 
-main .search-form input {
-    border-radius: 50px;
-    border: 1px solid #BF048D !important;
+main #search{
+    border-radius: 100px;
+    border: 1px solid #BF048D;
 }
 
 main .btn,
@@ -83,10 +83,6 @@ main .btn:hover,
     background-color: #F2E3D5 !important;
     color: black !important;
     font-weight: bolder !important;
-}
-
-main .search-container {
-    padding-left: 200px;
 }
 
 /*Tabla*/
@@ -130,6 +126,10 @@ form .form-control {
     object-fit: cover;
 }
 
+/*Footer*/
+footer{
+    min-height: 5vh !important;
+}
 .card-title {
     color: #F2E3D5 !important;
     background-color: #BF048D;
@@ -142,22 +142,17 @@ form .form-control {
     font-weight: bolder !important;
 }
 
-.card-footer {
-    text-align: center;
+.text-muted{
     font-size: 20px;
 }
 
-.card-btn {
-    position: absolute;
-    bottom: 2.5rem;
-    left: 280px;
-}
-
 .btn-event {
-    padding: .5rem;
+    padding: 10px;
     text-decoration: none;
     color: #F2E3D5;
     font-weight: bold;
+    border-radius: 100px !important;
+    font-size: 15px;
 }
 
 .card-text {
@@ -169,9 +164,14 @@ form .form-control {
     text-align: right;
 }
 
+.card-container h2{
+padding-bottom: 25vh;
+font-weight: bolder;
+color: #BF048D;
+}
+/*Queda corregir Media Queries para la proxima*/
 
-
-/*Media Queries*/
+/* Media Queries
 
 @media only screen and (max-width: 1000px) {
 
@@ -296,4 +296,4 @@ form .form-control {
         font-size: 12px;
     }
 
-}
+} */

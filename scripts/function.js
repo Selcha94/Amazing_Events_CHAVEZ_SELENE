@@ -5,7 +5,7 @@ function superFiltro(lista) {
 }
 function mostrarEventos(lista) {
   if (lista.length == 0) {
-    eventDiv.innerHTML = "<h5> There are no results for this search </h5>";
+    eventDiv.innerHTML = "<h2> &#10060No results found</h2>";
     return;
   }
   let cardHtml = "";
@@ -20,7 +20,7 @@ function mostrarEventos(lista) {
         <p class="card-text">${element.description}</p>
         <p class="card-text-date">${element.date}</p>
       </div>
-      <div class="card-footer">
+      <div class="card-footer d-flex justify-content-between align-items-center">
         <small class="text-muted">$${element.price}</small>
         <a href="../pages/details.html?id=${element._id}" class="btn-event">Ver Evento</a>
       </div>
