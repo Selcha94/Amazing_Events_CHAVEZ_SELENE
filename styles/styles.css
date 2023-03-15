@@ -136,10 +136,29 @@ footer{
     font-size: 24px;
     font-weight: bolder;
     text-align: center;
+    border-radius: 50px;
+}
+.details {
+    margin-top: 2rem;
+}
+
+.conCard{
+    min-height: 90vh;
+}
+
+#cardimg{
+    object-fit: cover;
+    min-height: 70vh;
+    box-shadow: 1px 1px 20px #BF048D;
+}
+
+.card-body h4{
+    color: #BF048D;
+    font-weight: bolder;
 }
 
 .text-muted {
-    font-weight: bolder !important;
+    font-weight: bolder!important;
 }
 
 .text-muted{

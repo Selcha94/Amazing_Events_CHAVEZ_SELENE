@@ -12,7 +12,7 @@ let card = "";
 card = `<div id="cardDetail" class="card mb-3">
 <div class="row">
     <div class="col-md-8">
-        <img id="cardimg" src="${evento.image}">
+        <img id="cardimg"  class="img-fluid rounded-start" src="${evento.image}">
     </div>
     <div class="col-md-4 d-flex flex-column justify-content-evenly align-items-start">
         <div class="card-body">
@@ -20,19 +20,19 @@ card = `<div id="cardDetail" class="card mb-3">
             <p class="card-text">"${evento.description}"</p>
         </div>
         <div class="card-body">            
-            <h6>Category: "${evento.category}"</h6>   
-            <h6>Place: "${evento.place}"</h6>                                         
-            <h6>Capacity: "${evento.capacity}"</h6>`;
+            <p>Category: "${evento.category}"</p>   
+            <p>Place: "${evento.place}"</p>                                         
+            <p>Capacity: "${evento.capacity}"</p>`;
 if (evento.assistance != undefined) {
-  card = card + `<h6>Assistance: "${evento.assistance}"</h6> `;
+  card = card + `<p>Assistance: "${evento.assistance}"</p> `;
 } else {
-  card = card + `<h6>Estimate: "${evento.estimate}"</h6> `;
+  card = card + `<p>Estimate: "${evento.estimate}"</p> `;
 }
 card =
   card +
   ` 
-            <h5 class="">Date: ${evento.date}</h5>
-            <h5>$ ${evento.price}</h5>             
+            <p>Date: ${evento.date}</p>
+            <h4>$ ${evento.price}</h4>             
         </div>                       
     </div>
 </div>
