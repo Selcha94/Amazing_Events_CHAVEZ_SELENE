@@ -1,4 +1,4 @@
-let urlApi = "https://mindhub-xj03.onrender.com/api/amazing";
+let urlApi = "https://mindhub-xj03.onrender.com/api/amazing"
 let eventsPast = [];
 let eventsUpcoming = [];
 let revenuesCat = [];
@@ -13,20 +13,16 @@ traerDatos();
 async function traerDatos() {
   try {
     const response = await fetch(urlApi);
-    const data = await response.json();
-    pastEvents(data.events, data);
+    const datos = await response.json();
+    pastEvents(datos.events, datos);
     //console.log(eventsPast);
     porcentajeAsistencia(eventsPast);
-    tablaPast.forEach(cat => {
-      ganancias(eventsPast, cat, "past");
-    });
-    tablaUpcoming.forEach(cat => {
-      ganancias(eventsUpcoming, cat, "upcoming");
-    });
+    tablaPast.forEach(cat => { ganancias(eventsPast, cat, "past")});
+    tablaUpcoming.forEach(cat => { ganancias(eventsUpcoming, cat, "upcoming")});
     console.log(tablaUpcoming);
     //categoriesFilt(datos.events);
   } catch (error) {
-    console.log("ERROR" + error);
+    console.error("ERROR" + error);
   }
 }
 
@@ -51,7 +47,7 @@ function pastEvents(objeto, miJson) {
 }
 function categoriesFilt(objeto, tiempo) {
   let categories = [];
-  objeto.map((event) => {
+  objeto.map(event => {
     if (!categories.includes(event.category)) {
       categories.push(event.category);
     }
@@ -59,6 +55,8 @@ function categoriesFilt(objeto, tiempo) {
   console.log(objeto);
   if (tiempo == "past") {
     tablaPast = categories;
+    // console.log('eventPast')
+    // console.log(tablaPast)
   } else {
     tablaUpcoming = categories;
     console.log("eventos futuros");
@@ -73,15 +71,8 @@ function ganancias(unArray, categoria, tiempo) {
   for (evento of unArray) {
     if (evento.category == categoria) {
       contCat++;
-      revenues +=
-        (evento.assistance ? evento.assistance : evento.estimated) *
-        evento.price;
-      sumaAss += parseFloat(
-        (
-          ((evento.assistance ? evento.assistance : evento.estimated) * 100) /
-          evento.capacity
-        ).toFixed(2)
-      );
+      revenues +=(evento.assistance ? evento.assistance : evento.estimated) * evento.price;
+      sumaAss += parseFloat(((evento.assistance ? evento.assistance : evento.estimated) * 100 / evento.capacity).toFixed(2));
     }
     // if (evento.assistance && !tablaPast.includes(categoria)) {
     //     tablaPast.push(categoria);
@@ -125,9 +116,7 @@ function porcentajeAsistencia(unArray) {
   let porcentajeMen = 100;
   let capacity = 0;
   for (evento of unArray) {
-    let auxPorcentaje = ((evento.assistance * 100) / evento.capacity).toFixed(
-      2
-    );
+    let auxPorcentaje = ((evento.assistance * 100) / evento.capacity).toFixed(2);
     if (auxPorcentaje > porcentajeMay) {
       porcentajeMay = auxPorcentaje;
       eventMayPorAsist = evento.name;

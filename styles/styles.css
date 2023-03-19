@@ -9,7 +9,6 @@
 footer,
 table {
     background-color: #F2E3D5;
-
 }
 
 /*Navigation*/
@@ -87,18 +86,14 @@ main .btn:hover,
 }
 
 /*Tabla*/
-main table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid #BF048D;
-}
 
-main th {
+main th{
     border: 3px solid #BF048D;
-    font-size: 2rem;
-    color: #F2E3D5;
+    font-size: 18px;
+    color: #BF048D;
     background-color: #BF048D;
+    text-align: center;
+    padding: 50px;
 }
 
 main td {
