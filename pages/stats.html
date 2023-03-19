@@ -84,100 +84,57 @@
       </div>
     </header>
     <main>
-      <div class="container my-3">
-        <div class="container-table d-flex justify-content-center">
-          <table>
-            <fieldset>
+      <div class="container d-flex align-items-center p-5 ">
+        <div class="container-table">
+          <table class="table caption-top table-bordered">
+            <caption class="border border-5 border-dark-subtle bg-danger-subtle ps-2">Events Statistics</caption>
               <thead>
                 <tr>
-                  <th class="text-center" colspan="3">Events statistics</th>
+                  <th scope="col">Events with the highest percentage of attendance</th>
+                  <th scope="col">Events with the lowest percentage of attendance</th>
+                  <th scope="col">Event with larger capacity</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="tabla1">
                 <tr>
-                  <td>Events with the highest percentage of attendance</td>
-                  <td>Events with the lowest percentage of attendance</td>
-                  <td>Event with larger capacity</td>
+                  <td>Metallica</td>
+                  <td>Jurassic Park</td>
+                  <td>15K NY</td>
                 </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
+                <!-- <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr> -->
               </tbody>
-            </fieldset>
-            <fieldset>
-              <thead>
-                <tr>
-                  <th class="text-center" colspan="3">
-                    Upcoming events statistics by category
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Categories</td>
-                  <td>Revenues</td>
-                  <td>Percentage of attendance</td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
-              </tbody>
-            </fieldset>
-            <fieldset>
-              <thead>
-                <tr>
-                  <th class="text-center" colspan="3">
-                    Past events statistics by category
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Categories</td>
-                  <td>Revenues</td>
-                  <td>Percentage of attendance</td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                </tr>
-              </tbody>
-            </fieldset>
+          </table>
+          <table class="table caption-top table-bordered">
+            <caption class="border border-5 border-dark-subtle bg-danger-subtle ps-2">Upcoming Events Statistics by Category
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Revenues</th>
+                <th scope="col">Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody id="tabla2">
+              
+            </tbody>
+          </table>
+          <table class="table caption-top table-bordered">
+            <caption class="border border-5 border-dark-subtle bg-danger-subtle ps-2">Past Events Statistics by Category
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Revenues</th>
+                <th scope="col">Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody id="tabla3">
+             
+            </tbody>
           </table>
         </div>
       </div>
@@ -242,5 +199,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/stats.js"></script>
   </body>
 </html>
