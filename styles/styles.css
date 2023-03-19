@@ -101,6 +101,11 @@ main td {
     text-align: center;
 }
 
+main .border{
+    text-align: center;
+    font-weight: bolder;
+    color: #BF048D;
+}
 form label {
     font-weight: bolder;
     color: #BF048D;

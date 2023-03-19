@@ -71,8 +71,8 @@ function ganancias(unArray, categoria, tiempo) {
   for (evento of unArray) {
     if (evento.category == categoria) {
       contCat++;
-      revenues +=(evento.assistance ? evento.assistance : evento.estimated) * evento.price;
-      sumaAss += parseFloat(((evento.assistance ? evento.assistance : evento.estimated) * 100 / evento.capacity).toFixed(2));
+      revenues +=(evento.assistance ? evento.assistance : evento.estimate) * evento.price;
+      sumaAss += parseFloat(((evento.assistance ? evento.assistance : evento.estimate) * 100 / evento.capacity).toFixed(2));
     }
     // if (evento.assistance && !tablaPast.includes(categoria)) {
     //     tablaPast.push(categoria);
