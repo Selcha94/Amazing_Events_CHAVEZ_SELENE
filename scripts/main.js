@@ -24,11 +24,4 @@ async function traerDatos(){
 
 
 
-// busqueda.addEventListener('input',()=>{
-//   superFiltro(data.events,busqueda.value);
-// });
-// categoriasData.addEventListener('change',()=>{
-//   superFiltro(data.events);
-// });
-// mostrarEventos(data.events);
-// mostrarCheck(listaDeCategorias(data.events))
+
